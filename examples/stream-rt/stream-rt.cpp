@@ -9,6 +9,8 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
+#include <algorithm>  // This header defines the transform function
+
 struct whisper_params
 {
     int32_t n_threads = std::min(4, (int32_t)std::thread::hardware_concurrency());
